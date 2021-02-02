@@ -8,7 +8,7 @@ This article describes how to get rid of a stuck table. This has been tested on 
 **WARNING** Don't blame me for any data loss... :wink: **WARNING**
 
 ## Deactivate HBase sanity checks which are ACTIVE by default
-- Make an entry in the ``snippets for hbase-site.xml`` to set ``hbase.table.sanity.checks`` to ``false``
+- Make an entry in ``hbase-site.xml`` to set ``hbase.table.sanity.checks`` to ``false``
 - Restart the HBase service
  
 ## Check & remove the extra table attributes from `hbase shell`
@@ -46,7 +46,7 @@ get 'hbase:meta', 'Test:DataCollection', 'table:state'
 ```
 
 ## Activate sanity checks, bringing it back to the default configuration
-- Remove the entry in the ``snippets for hbase-site.xml`` to set ``hbase.table.sanity.checks`` back to default
+- Remove the entry in ``hbase-site.xml`` to set ``hbase.table.sanity.checks`` back to default
 - Restart the HBase service
  
 ## Drop the stuck table
