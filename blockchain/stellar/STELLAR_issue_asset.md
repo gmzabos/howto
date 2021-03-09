@@ -22,7 +22,7 @@ The token was named [AFFEN](https://stellar.expert/explorer/public/asset/AFFEN-G
 
 Best starting point is the official [documentation](https://developers.stellar.org/docs/issuing-assets/){:target="_blank"}, but there is also great public articles & videos on the topic. I recommend reading at least into the documentation, just to get a feeling what to do and why to do it. From there on...
 
-## Let's go
+## Howto - let's go
 
 - You will need an active wallet, which you use to fund two new accounts with. Make sure you have 5 XLM in that wallet which you can transfer out. I used my [Lobstr](https://lobstr.co/){:target="_blank"} wallet for this.
 - Access Stellar [Laboratory](https://laboratory.stellar.org/){:target="_blank"}. Select "public" on the top right corner.
@@ -30,13 +30,13 @@ Best starting point is the official [documentation](https://developers.stellar.o
 - Create an DISTRIBUTOR account: Click again on `Generate keypair`, also note down the second set of values for `Public Key` & `Secret Key`
 - Make sure you have noted both values for each account. Do not *ever* hand out the `Secret Key` to anyone else!
 
-## Fund ISSUER and DISTRIBUTOR accounts
+## Howto - fund ISSUER and DISTRIBUTOR accounts
 
 - Activate the ISSUER account by sending 2 XLM to it through your Stellar wallet. Use the `Public Key` (ISSUER) as recipient.
 - Activate the DISTRIBUTOR account by sending 3 XLM to it through your Stellar wallet. Use the `Public Key` (DISTRIBUTOR) as recipient.
 - Give it a few seconds, then check both accounts on [stellar.expert](https://stellar.expert/explorer/public){:target="_blank"}. Both accounts should be active and present the amount of XLM, which you just transfered. Go on with...
 
-## Establish trustline from DISTRIBUTOR to ISSUER
+## Howto - establish trustline from DISTRIBUTOR to ISSUER
 
 - Access Stellar [Laboratory](https://laboratory.stellar.org/){:target="_blank"}. Select "public" on the top right corner.
 - Select `Build Transaction`, paste the `Public Key` (DISTRIBUTOR) into the `Source Account` field
@@ -50,7 +50,7 @@ Best starting point is the official [documentation](https://developers.stellar.o
 - Scroll down to `Sign in Transaction Submitter` and click it.
 - Scroll down to `Submit Transaction` and click it.
 
-## Send the new token from ISSUER to DISTRIBUTOR
+## Howto - send the new token from ISSUER to DISTRIBUTOR
 
 - Access Stellar [Laboratory](https://laboratory.stellar.org/){:target="_blank"}. Select "public" on the top right corner.
 - Select `Build Transaction`, paste the `Public Key` (ISSUER) into the `Source Account` field.
@@ -65,7 +65,7 @@ Best starting point is the official [documentation](https://developers.stellar.o
 - Scroll down to `Submit Transaction` and click it.
 - Give it a minute, then check both accounts on [stellar.expert](https://stellar.expert/explorer/public){:target="_blank"}. Both accounts should present the amount of XLM, plus the amount of your new token (e.g. `ABCDEF`) on the DISTRIBUTOR account.
 
-## (Optional) Publish information about your new token
+## Howto - publish information about your new token
 
 Okay, that is your new token. In the process you have created two accounts by paying little XLM into both, established a trustline from DISTRIBUTOR account to ISSUER account, then you "paid" from the ISSUER to the DISTRIBUTOR account a specific amount of your new token. The DISTRIBUTOR account is from here on going to handle outgoing transactions for your token. Now, let's advertise your new token.
 
